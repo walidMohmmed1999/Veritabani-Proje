@@ -1,0 +1,36 @@
+<!-- views/updateCase.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Update Case</title>
+</head>
+
+<body>
+    <h1>Update Case</h1>
+    <!-- HTML form for updating a case -->
+    <form action="/cases/update/<%= caseData.VakaID %>" method="post">
+        <label for="vakaNumarasi">Vaka Numarasi:</label>
+        <input type="text" id="vakaNumarasi" name="vakaNumarasi" value="<%= caseData.VakaNumarasi %>" required>
+
+        <label for="vakaTipi">Vaka Tipi:</label>
+        <input type="text" id="vakaTipi" name="vakaTipi" value="<%= caseData.VakaTipi %>" required>
+
+        <label for="vakaTanimi">Vaka Tanimi:</label>
+        <textarea id="vakaTanimi" name="vakaTanimi" required><%= caseData.VakaTanimi %></textarea>
+
+        <label for="vakaDurumu">Vaka Durumu:</label>
+        <input type="text" id="vakaDurumu" name="vakaDurumu" value="<%= caseData.VakaDurumu %>" required>
+
+        <label for="memurID">Mamur Id:</label>
+        <input type="text" id="memurID" name="memurID" value="<%= caseData.MemurID %>" required>
+
+        <button type="submit">Vaka Guncelle</button>
+    </form>
+
+</body>
+
+</html>

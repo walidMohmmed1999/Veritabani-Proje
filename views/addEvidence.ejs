@@ -1,0 +1,33 @@
+<!-- views/addEvidence.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Kanit Ekle</title>
+</head>
+
+<body>
+    <h1>Kanit Ekle</h1>
+    <!-- HTML form for adding evidence -->
+    <form action="/cases/add-evidence" method="post">
+        <label for="VakaID">VakaID:</label>
+        <input type="text" id="VakaID" name="VakaID" required>
+
+        <label for="Tanimi">Tanimi:</label>
+        <input type="text" id="Tanimi" name="Tanimi" required>
+
+        <label for="Tipi">Tipi:</label>
+        <input type="text" id="Tipi" name="Tipi" required>
+
+        <label for="DepolamaYeri">DepolamaYeri:</label>
+        <input type="text" id="DepolamaYeri" name="DepolamaYeri" required>
+
+        <button type="submit">Kanit Ekle</button>
+    </form>
+
+</body>
+
+</html>

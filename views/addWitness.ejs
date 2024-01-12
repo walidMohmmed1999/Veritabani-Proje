@@ -1,0 +1,35 @@
+<!-- views/addWitness.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Add Witness</title>
+</head>
+
+<body>
+    <h1>Tanik Ekle</h1>
+    <!-- HTML form for adding a witness -->
+    <form action="/cases/add-witness" method="post">
+        <label for="VakaID">VakaID:</label>
+        <input type="text" id="VakaID" name="VakaID" required>
+
+        <label for="Ad">Ad:</label>
+        <input type="text" id="Ad" name="Ad" required>
+
+        <label for="Soyad">Soy Ad:</label>
+        <input type="text" id="Soyad" name="Soyad" required>
+
+        <label for="DogumGunu">Dogum Gunu:</label>
+        <input type="date" id="DogumGunu" name="DogumGunu">
+
+        <label for="Adres">Addres:</label>
+        <textarea id="Adres" name="Adres" required></textarea>
+
+        <button type="submit">Tanik Ekle</button>
+    </form>
+</body>
+
+</html>

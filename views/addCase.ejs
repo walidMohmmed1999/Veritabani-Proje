@@ -1,0 +1,36 @@
+<!-- views/addCase.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Vaka Ekle</title>
+</head>
+
+<body>
+    <h1>Vaka Ekle</h1>
+    <!-- HTML form for adding a case -->
+    <form action="/cases/add-case" method="post">
+        <label for="vakaNumarasi">Vaka Numarasi:</label>
+        <input type="text" id="vakaNumarasi" name="vakaNumarasi" required>
+
+        <label for="vakaTipi">Vaka Tipi:</label>
+        <input type="text" id="vakaTipi" name="vakaTipi" required>
+
+        <label for="vakaTanimi">Vaka Tanimi:</label>
+        <textarea id="vakaTanimi" name="vakaTanimi" required></textarea>
+
+        <label for="vakaDurumu">Vaka Durumu:</label>
+        <input type="text" id="vakaDurumu" name="vakaDurumu" required>
+
+        <label for="memurID">Mamur Id:</label>
+        <input type="text" id="memurID" name="memurID" required>
+
+        <button type="submit">Vaka Ekle</button>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!-- views/addCase.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Mamur Ekle</title>
+</head>
+
+<body>
+    <h1>Mamur Ekle</h1>
+    <!-- HTML form for adding an officer -->
+      <form action="/cases/add-officer" method="post">
+
+
+        <label for="ad">Ad:</label>
+        <input type="text" id="ad" name="ad" required>
+
+        <label for="soyad">Soyad:</label>
+        <input type="text" id="soyad" name="soyad" required>
+
+        <label for="rutbe">Rutbe:</label>
+        <input type="text" id="rutbe" name="rutbe" required>
+
+        <label for="rozetNumarasi">rozet numarasi:</label>
+        <input type="text" id="rozetNumarasi" name="rozetNumarasi" required>
+
+        <label for="iletisimNumarasi">Iletisim Numarasi:</label>
+        <input type="tel" id="iletisimNumarasi" name="iletisimNumarasi" required>
+
+        <button type="submit">Mamur Ekle</button>
+    </form>
+
+</body>
+
+</html>

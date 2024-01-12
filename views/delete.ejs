@@ -1,0 +1,22 @@
+<!-- views/delete.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Vaka Sil</title>
+</head>
+
+<body>
+    <h1>Vaka Sil</h1>
+    <!-- HTML form for deleting a case -->
+    <form action="/cases/delete/<%= vakaID %>" method="post">
+        <p>Vakayi Silmek emin misin?</p>
+        <button type="submit">Vaka Sil</button>
+    </form>
+    
+</body>
+
+</html>

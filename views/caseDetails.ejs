@@ -1,0 +1,30 @@
+<!-- views/caseDetails.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Case Details</title>
+</head>
+
+<body>
+    <!-- Display case details here -->
+    <h1>Case Details</h1>
+    <p>Case ID: <%= caseDetails.vakaID %>
+    </p>
+    <!-- Include other case details as needed -->
+
+    <!-- Include the link and form for deleting the case -->
+    <a href="/cases/delete/<%= caseDetails.vakaID %>"
+        onclick="event.preventDefault(); document.getElementById('delete-form').submit();">Delete Case</a>
+
+    <!-- Create a hidden form to submit the DELETE request -->
+    <form id="delete-form" action="/cases/delete/<%= caseDetails.vakaID %>" method="post" style="display: none;">
+        <!-- Include any additional hidden input fields if needed -->
+        <input type="hidden" name="_method" value="delete">
+    </form>
+</body>
+
+</html>
